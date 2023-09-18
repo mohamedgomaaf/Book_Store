@@ -1,0 +1,127 @@
+.products h1 {
+  text-align: center;
+}
+.products .box-container {
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+.products .box-container .box {
+  position: relative;
+  margin: 2rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+  width: 240px;
+}
+.products .box-container .box a:first-child {
+  position: absolute;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 11px 13px;
+  border-radius: 21px;
+}
+.products .box-container .box a:first-child:hover {
+  background-color: #333;
+}
+
+.products .box-container .box img {
+  max-width: 100%;
+  padding: 30px;
+}
+.products .box-container .content {
+  text-align: center;
+  font-size: 18px;
+}
+.products .box-container .content .price {
+  margin: 10px 0;
+  color: red;
+}
+.products .box-container .content input[type="number"] {
+  width: 200px;
+  height: 1.9rem;
+  border-radius: 0.5rem;
+}
+.products .box-container .content input[type="submit"] {
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: #f39c12;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  margin-top: 15px;
+}
+.products .box-container .content input[type="submit"]:hover {
+  background-color: #333;
+  border: 2px solid;
+}
+.products .box-container .content .sub-total {
+  margin: 23px 0;
+}
+.products .box-container .content .sub-total span {
+  color: red;
+}
+a .flex {
+  background: purple;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.delete-btn {
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: #c0392b;
+  width: 7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  padding: 12px 46px;
+}
+.delete-btn:hover {
+  background-color: #333;
+}
+.cart-total {
+  padding-top: 24px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 50px;
+  border-radius: 21px;
+  font-size: 18px;
+  height: 169px;
+}
+.cart-total a {
+  background: purple;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 13px;
+}
+.cart-total a:hover {
+  background-color: #fff;
+  color: #8e44ad;
+  border: 2px solid;
+}
+.empty {
+  position: absolute;
+  border: 2px solid;
+  width: 100%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;}

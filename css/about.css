@@ -1,0 +1,222 @@
+/* Start Variables */
+:root {
+  --purple: #8e44ad;
+  --red: #c0392b;
+  --orange: #f39c12;
+  --black: #333;
+  --white: #fff;
+  --light-color: #666;
+  --light-white: #ccc;
+  --light-bg: #f5f5f5;
+  --border: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  text-transform: capitalize;
+  font-family: "Cairo", sans-serif;
+  background-color: var(--light-bg);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 20rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(184, 41, 184);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  padding: 1.5rem 2rem;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* start reviews */
+.reviews {
+  background-color: var(--light-bg);
+}
+.title {
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2.5rem;
+}
+.reviews .box-contianer {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.reviews .box-contianer .box {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem;
+  border: var(--border);
+}
+.reviews .box-contianer .box img {
+  border-radius: 50%;
+  width: 140px;
+  transition: 0.2s;
+}
+.reviews .box-contianer .box p {
+  color: var(--black);
+  font-size: 1rem;
+  padding: 0.2rem 0;
+  line-height: 1.2;
+}
+.reviews .box-contianer .box .start {
+  color: var(--orange);
+  border-radius: 0.5rem;
+  border: var(--border);
+  margin: 0.5rem 0;
+  display: inline-block;
+  background-color: var(--light-bg);
+  padding: 0.5rem 1.9rem;
+}
+.reviews .box-contianer .box h3 {
+  color: var(--black);
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+/* end reviews */
+/* start auther */
+.auther {
+  margin-bottom: 1rem;
+}
+.auther .box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.auther .box-container .box img {
+  width: 100%;
+  height: 23rem;
+  object-fit: cover;
+}
+.auther .box-container .box {
+  position: relative;
+  text-align: center;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.auther .box-container .box .shar {
+  position: absolute;
+  opacity: 0;
+  top: 21px;
+  display: grid;
+}
+.auther .box-container .box:hover .shar {
+  opacity: 1;
+}
+.auther .box-container .box:hover .shar i {
+  padding: 0.6rem;
+  margin-bottom: 10px;
+  border: var(--border);
+  color: var(--black);
+  font-size: 1.5rem;
+  margin: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: var(--light-bg);
+ 
+}
+.auther .box-container .box:hover .shar i:hover {
+  background-color: var(--purple);
+  color: #ccc;
+  border-radius: 10px;
+}
+.auther .box-container .box h3 {
+  font-size: 1rem;
+  color: var(--black);
+  padding: 1.5rem;
+}
+
+
+/* start card */
+.products h1 {
+  text-align: center;
+}
+.products p {
+  text-align: center;
+  border: 1px solid black;
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+/* end card */
